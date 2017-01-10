@@ -1,0 +1,7 @@
+RedisInstrumentCache.o: RedisInstrumentCache.cpp RedisInstrumentCache.hpp \
+ RedisInstrument.hpp RedisConnection.hpp
+RedisInstrument.o: RedisInstrument.cpp RedisInstrument.hpp
+RedisConnection.o: RedisConnection.cpp RedisConnection.hpp \
+ RedisInstrument.hpp
+main.o: main.cpp RedisConnection.hpp RedisInstrument.hpp \
+ RedisInstrumentCache.hpp RedisTimer.hpp
